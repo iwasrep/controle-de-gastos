@@ -8,6 +8,14 @@
 - Acessar a pasta
 - Digitar o comando abaixo
 
-` npm start`
+```
+npm install
+
+# Abre o endereço http://localhost:3000
+npm start
+
+# Em Produção
+npm run build
+```
 
 # Divirta-se!
