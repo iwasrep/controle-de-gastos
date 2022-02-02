@@ -6,8 +6,6 @@ import { GlobalContext } from "../context/GlobalState";
 export const ListadeTransacoes = () => {
   const { transacoes } = useContext(GlobalContext);
 
-  console.log(transacoes);
-
   return (
     <>
       {transacoes.length > 0 && (

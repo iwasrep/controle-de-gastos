@@ -12,7 +12,7 @@ import { GlobalContext } from "../context/GlobalState";
 export const AdcTransacao = () => {
   const [tipo, setTipo] = useState("0");
   const [titulo, setTitulo] = useState("");
-  const [valoradc, setValoradc] = useState(0);
+  const [valoradc, setValoradc] = useState("0.00");
   const [isLoading, setLoading] = useState(false);
   const [show, setShow] = useState(false);
 
@@ -39,6 +39,9 @@ export const AdcTransacao = () => {
 
     adicionarTransacoes(novaTransacao);
     setLoading(true);
+    setTipo("0");
+    setTitulo("");
+    setValoradc("0.00");
   };
 
   function simulateNetworkRequest() {
@@ -108,6 +111,7 @@ export const AdcTransacao = () => {
                 <FormControl
                   type="number"
                   value={valoradc}
+                  onClick={(e) => setValoradc('')}
                   onChange={(e) => setValoradc(e.target.value)}
                 />
               </InputGroup>
