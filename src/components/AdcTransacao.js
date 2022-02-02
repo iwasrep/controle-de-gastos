@@ -57,11 +57,16 @@ export const AdcTransacao = () => {
 
   return (
     <>
-      <Button variant="success" onClick={handleShow}>
-        +
-      </Button>
-
-      <Modal show={show} fullscreen="modal-fullscreen-md-down" onHide={handleClose}>
+      <div className="text-center p-3 btn-fixed">
+        <Button variant="success" onClick={handleShow}>
+          + Adicionar Transação
+        </Button>
+      </div>
+      <Modal
+        show={show}
+        fullscreen="modal-fullscreen-md-down"
+        onHide={handleClose}
+      >
         <Modal.Header closeButton>
           <Modal.Title>Adicionar Nova Transação</Modal.Title>
         </Modal.Header>
@@ -114,7 +119,7 @@ export const AdcTransacao = () => {
                 disabled={isLoading}
                 onClick={!isLoading ? handleClick : null}
               >
-                {isLoading ? "Enviando…" : "Adicionar Transação"}
+                {isLoading ? "Enviando…" : "+ Adicionar Transação"}
               </Button>
             </div>
           </form>
