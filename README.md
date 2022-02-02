@@ -18,4 +18,4 @@ npm start ou yarn start
 npm run build ou yarn run build
 ```
 
-# Enjoy
+# Enjoy!
