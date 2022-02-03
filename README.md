@@ -11,7 +11,7 @@
 ```
 npm install ou yarn install
 ```
-## Abre o endereço http://localhost:3000
+## Abra o endereço http://localhost:3000
 ```
 npm start ou yarn start
 ```
