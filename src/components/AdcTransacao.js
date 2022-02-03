@@ -52,7 +52,6 @@ export const AdcTransacao = () => {
   useEffect(() => {
     if (isLoading) {
       simulateNetworkRequest().then(() => {
-        handleClose();
         setLoading(false);
       });
     }
