@@ -10,11 +10,13 @@
 
 ```
 npm install ou yarn install
-
-# Abre o endereço http://localhost:3000
+```
+## Abre o endereço http://localhost:3000
+```
 npm start ou yarn start
-
+```
 # Em Produção
+```
 npm run build ou yarn run build
 ```
 
